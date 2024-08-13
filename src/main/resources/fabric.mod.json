@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "crazyzombie",
+	"version": "0.5.0",
+	"name": "CrazyZombie",
+	"description": "加入了非常疯狂的离谱僵尸！！！",
+	"authors": [
+		"Folk.skill"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/crazyzombie/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.besson.crazyzombie.CrazyZombie"
+		],
+		"fabric-datagen": [
+			"com.besson.crazyzombie.CrazyZombieDataGenerator"
+		]
+	},
+	"mixins": [
+		"crazyzombie.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
